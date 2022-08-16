@@ -1,10 +1,31 @@
-let myFriends = {
-  name: "Alex",
-  legs: 2,
-  friends: 50,
-  theDrink : 'water'
+function sumCashAndDigit() {
+  console.log(this.cash + this.digit);
+}
+
+// hello()
+
+let user = {
+  name: "Azamat",
+  cash: 2000,
+  digit: 1000,
+  calcMyMoney: sumCashAndDigit,
 };
 
-let nameOf = myFriends[theDrink];
+let said = {
+  name: "Said",
+  cash: 3000,
+  digit: 500,
+  calcMyMoney: sumCashAndDigit,
+};
 
-console.log(nameOf);
+let firuz = {
+  name: "Firuz",
+  cash: 5000,
+  digit: 750,
+};
+
+// user.calcMyMoney();
+// said.calcMyMoney();
+
+// sumCashAndDigit.bind(firuz)()
+sumCashAndDigit.call(firuz);
