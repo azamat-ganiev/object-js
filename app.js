@@ -22,47 +22,46 @@
 let vasya = {
   name: "Vasya",
   cash: 1000,
-  сurrecy: "TJS"
+  сurrecy: "TJS",
 };
 
 let ivan = {
   name: "Ivan",
   cash: 150,
-  сurrecy: "TJS"
+  сurrecy: "TJS",
 };
 
 let anton = {
   name: "Anton",
   cash: 230,
-  сurrecy: "TJS"
+  сurrecy: "TJS",
 };
 
 let jony = {
   name: "Jony",
   cash: 1234,
-  сurrecy: "USD"
+  сurrecy: "USD",
 };
 
 let max = {
   name: "Max",
   cash: 333,
-  сurrecy: "USD"
+  сurrecy: "USD",
 };
 
 let john = {
   name: "John",
   cash: 780,
-  сurrecy: "USD"
+  сurrecy: "USD",
 };
 
 let umed = {
   name: "Umed",
   cash: 280,
-  сurrecy: "TJS"
+  сurrecy: "TJS",
 };
 
 let person = [umed, max, john, jony, anton, ivan, vasya];
-
 
 // part 1
 // let richMans = [];
@@ -77,7 +76,6 @@ let person = [umed, max, john, jony, anton, ivan, vasya];
 //     result += person[i].cash
 //   }
 // }
-
 
 // part 2
 
@@ -94,11 +92,11 @@ let result = 0;
 
 for (let i = 0; i < person.length; i++) {
   if (person[i].сurrecy === "USD") {
-    result += person[i].cash * 10.20
+    result += person[i].cash * 10.2;
     continue;
   }
   result += person[i].cash;
 }
 
-
 console.log(result);
+
